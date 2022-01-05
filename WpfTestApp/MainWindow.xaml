@@ -28,7 +28,7 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <ListBox Name="lbListaItemow" Grid.Row="2" Grid.RowSpan="3" ScrollViewer.HorizontalScrollBarVisibility="Auto" Background="#FF333333" Foreground="White" Grid.Column="1" Grid.ColumnSpan="3" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <ListBox Name="lbListaItemow" Grid.Row="2" Grid.RowSpan="3" ScrollViewer.HorizontalScrollBarVisibility="Auto" Background="#FF333333" Foreground="White"  Grid.ColumnSpan="4" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Column="1">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel IsItemsHost="True"/>
