@@ -11,6 +11,7 @@ namespace WpfTestApp
         public List<Spot> arrListaSpotow = new List<Spot>();
 
         public ListaSpotow() => CreateListOfAllSpots();
+        public ListaItemow listaItemow = new ListaItemow();
 
         public void CreateListOfAllSpots()
         {
@@ -19,13 +20,20 @@ namespace WpfTestApp
             CreatePilaKuSpot();
         }
 
+        public void clearListOfItems()
+        {
+            foreach(Item o in listaItemow.listOfAllItems)
+            {
+                o.Quantity = 0;
+            }
+        }
+
         private void CreateStarsEndSpot()
         {
             List<Item> items = new List<Item>();
-            items.Add(new Item(15500, "Sanguine Crystal of Despair", true));
-            items.Add(new Item("Black Stone (Armor)"));
-            items.Add(new Item("Black Stone (Weapon)"));
-            items.Add(new Item(18370000, "Clear Blackstar Crystal", false));
+            items.Add(listaItemow.listOfAllItems[0]);
+            items.Add(listaItemow.listOfAllItems[3]);
+            listaItemow.AddCommonItemsToList(items);
             Spot spot = new Spot("Star's End", items);
             arrListaSpotow.Add(spot);
         }
@@ -33,10 +41,9 @@ namespace WpfTestApp
         private void CreatePollyForestSpot()
         {
             List<Item> items = new List<Item>();
-            items.Add(new Item(1955, "Mushroom Hypha", true));
-            items.Add(new Item("Black Stone (Armor)"));
-            items.Add(new Item("Black Stone (Weapon)"));
-            items.Add(new Item(2500000, "Pure Forest Breath", false));
+            items.Add(listaItemow.listOfAllItems[4]);
+            items.Add(listaItemow.listOfAllItems[5]);
+            listaItemow.AddCommonItemsToList(items);
             Spot spot = new Spot("Polly Forest", items);
             arrListaSpotow.Add(spot);
         }
@@ -44,10 +51,9 @@ namespace WpfTestApp
         private void CreatePilaKuSpot()
         {
             List<Item> items = new List<Item>();
-            items.Add(new Item(16400, "Warder's Token Piece", true));
-            items.Add(new Item("Black Stone (Armor)"));
-            items.Add(new Item("Black Stone (Weapon)"));
-            items.Add(new Item(3300000, "Scroll Written in Ancient Language", false));
+            items.Add(listaItemow.listOfAllItems[6]);
+            listaItemow.AddCommonItemsToList(items);
+            items.Add(listaItemow.listOfAllItems[7]);
             Spot spot = new Spot("Pila Ku Jail", items);
             arrListaSpotow.Add(spot);
         }

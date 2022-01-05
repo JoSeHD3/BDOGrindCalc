@@ -75,6 +75,7 @@ namespace WpfTestApp
                 lbListaItemow.ItemsSource = null;
                 lbListaItemow.ItemsSource = takeover.arrListaItemow;
                 stopwatch.Reset();
+                listaSpotow.clearListOfItems();
                 labTimer.Content = "00:00:00";
             }
             
@@ -90,7 +91,7 @@ namespace WpfTestApp
                     stopwatch.Stop();
                 }
 
-                calculationsHandler.CalculatedSilverPerHour = (long) (calculationsHandler.CalculatedTotalSilverTaxed * (totalMinutes / 60));
+                calculationsHandler.CalculatedSilverPerHour = (long) (calculationsHandler.CalculatedTotalSilverTaxed / (totalMinutes / 60));
                 calculationsHandler.CalculatedSilverPerHourText = calculationsHandler.CalculatedSilverPerHour.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
 
                 labInfoText.Visibility = Visibility.Visible;
