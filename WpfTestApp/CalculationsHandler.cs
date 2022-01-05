@@ -22,23 +22,26 @@ namespace WpfTestApp
         private string calculatedSilverPerHourText;
         public CalculationsHandler(Spot currentSpot)
         {
-            foreach(Item i in currentSpot.arrListaItemow)
+            if (currentSpot != null)
             {
-                calculatedTotalSilver += i.Price * i.Quantity;
-                if (i.IsTrash)
-                    calculatedTrashSilver += i.Price * i.Quantity;
-                else
-                    calculatedMarketSilver += i.Price * i.Quantity;
-            }
-            calculatedMarketSilverTaxed =(long) (calculatedMarketSilver * 0.845);
-            calculatedTotalSilverTaxed = calculatedMarketSilverTaxed + calculatedTrashSilver;
-            
+                foreach (Item i in currentSpot.arrListaItemow)
+                {
+                    calculatedTotalSilver += i.Price * i.Quantity;
+                    if (i.IsTrash)
+                        calculatedTrashSilver += i.Price * i.Quantity;
+                    else
+                        calculatedMarketSilver += i.Price * i.Quantity;
+                }
+                calculatedMarketSilverTaxed = (long)(calculatedMarketSilver * 0.845);
+                calculatedTotalSilverTaxed = calculatedMarketSilverTaxed + calculatedTrashSilver;
 
-            calculatedTotalSilverText = calculatedTotalSilver.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
-            calculatedMarketSilverText = calculatedMarketSilver.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
-            calculatedTrashSilverText = calculatedTrashSilver.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
-            calculatedMarketSilverTaxedText = calculatedMarketSilverTaxed.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
-            calculatedTotalSilverTaxedText = calculatedTotalSilverTaxed.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
+
+                calculatedTotalSilverText = calculatedTotalSilver.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
+                calculatedMarketSilverText = calculatedMarketSilver.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
+                calculatedTrashSilverText = calculatedTrashSilver.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
+                calculatedMarketSilverTaxedText = calculatedMarketSilverTaxed.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
+                calculatedTotalSilverTaxedText = calculatedTotalSilverTaxed.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("de"));
+            }
         }
 
         public string CalculatedTotalSilverText { get => calculatedTotalSilverText; set => calculatedTotalSilverText = value; }
