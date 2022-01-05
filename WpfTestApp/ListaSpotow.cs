@@ -22,10 +22,10 @@ namespace WpfTestApp
         private void CreateStarsEndSpot()
         {
             List<Item> items = new List<Item>();
-            items.Add(new Item(15500, "Sanguine Crystal of Despair"));
+            items.Add(new Item(15500, "Sanguine Crystal of Despair", true));
             items.Add(new Item("Black Stone (Armor)"));
             items.Add(new Item("Black Stone (Weapon)"));
-            items.Add(new Item(18370000, "Clear Blackstar Crystal"));
+            items.Add(new Item(18370000, "Clear Blackstar Crystal", false));
             Spot spot = new Spot("Star's End", items);
             arrListaSpotow.Add(spot);
         }
@@ -33,10 +33,10 @@ namespace WpfTestApp
         private void CreatePollyForestSpot()
         {
             List<Item> items = new List<Item>();
-            items.Add(new Item(1955, "Mushroom Hypha"));
+            items.Add(new Item(1955, "Mushroom Hypha", true));
             items.Add(new Item("Black Stone (Armor)"));
             items.Add(new Item("Black Stone (Weapon)"));
-            items.Add(new Item(2500000, "Pure Forest Breath"));
+            items.Add(new Item(2500000, "Pure Forest Breath", false));
             Spot spot = new Spot("Polly Forest", items);
             arrListaSpotow.Add(spot);
         }
@@ -44,10 +44,10 @@ namespace WpfTestApp
         private void CreatePilaKuSpot()
         {
             List<Item> items = new List<Item>();
-            items.Add(new Item(16400, "Warder's Token Piece"));
+            items.Add(new Item(16400, "Warder's Token Piece", true));
             items.Add(new Item("Black Stone (Armor)"));
             items.Add(new Item("Black Stone (Weapon)"));
-            items.Add(new Item(3300000, "Scroll Written in Ancient Language"));
+            items.Add(new Item(3300000, "Scroll Written in Ancient Language", false));
             Spot spot = new Spot("Pila Ku Jail", items);
             arrListaSpotow.Add(spot);
         }

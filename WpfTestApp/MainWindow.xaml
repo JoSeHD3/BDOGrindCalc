@@ -8,22 +8,26 @@
         Title="MainWindow" Height="675" Width="1200">
     <Grid Background="#FF333333">
         <Grid.RowDefinitions>
-            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="75*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="60*"/>
         </Grid.ColumnDefinitions>
-        <ItemsControl Name="icListaSpotow" Grid.Row="1" Grid.RowSpan="2">
+        <ItemsControl Name="icListaSpotow" Grid.Row="3" Grid.RowSpan="2">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <Button Content="{Binding}" Background="#FF454545" BorderBrush="#FF333333" Foreground="White" Click="icListaSpotow_Click"/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <ListBox Name="lbListaItemow" Grid.Column="1" Grid.Row="1" Grid.RowSpan="1" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="#FF333333" Foreground="White">
+        <ListBox Name="lbListaItemow" Grid.Row="2" Grid.RowSpan="3" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="#FF333333" Foreground="White" Grid.ColumnSpan="4" Margin="218,0,0,494">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel IsItemsHost="True"/>
@@ -38,5 +42,18 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <StackPanel Name="spCalculations" Grid.Row="4" Grid.ColumnSpan="4" Margin="218,0,0,0">
+            <Label Name="labInfoText" Foreground="White" Content="CALCULATED DATA:" FontSize="20" FontWeight="Bold" Margin="2" Visibility="Hidden"/>
+            <Label Name="labCalculatedTotalSilverText" Foreground="White" FontSize="20" FontWeight="Bold" Margin="2"/>
+            <Label Name="labCalculatedTrashSilverText" Foreground="White" FontSize="20" FontWeight="Bold" Margin="2"/>
+            <Label Name="labCalculatedMarketSilverText" Foreground="White" FontSize="20" FontWeight="Bold" Margin="2"/>
+            <Label Name="labCalculatedMarketSilverTaxedText" Foreground="White" FontSize="20" FontWeight="Bold" Margin="2"/>
+            <Label Name="labCalculatedTotalSilverTaxedText" Foreground="White" FontSize="20" FontWeight="Bold" Margin="2"/>
+            <Label Name="labCalculatedSilverPerHourText" Foreground="White" FontSize="20" FontWeight="Bold" Margin="2"/>
+        </StackPanel>
+        <Button Content="Calculate Data" Grid.Row="2" Background="#FF454545" BorderBrush="#FF333333" Foreground="White" FontSize="20" FontWeight="Bold" FontFamily="Arial Black" Click="btnCalculateData_Click" Margin="0,0,0,66" Grid.RowSpan="2"/>
+        <Label Name="labTimer" Grid.Column="1" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="2"/>
+        <Button Grid.Column="2" Content="Start" Click="btnStartStopwatch_Click" Background="#FF454545" BorderBrush="#FF333333" Foreground="White"/>
+        <Button Grid.Column="2" Content="Stop" Grid.Row="1" Click="btnStopStopwatch_Click" Background="#FF454545" BorderBrush="#FF333333" Foreground="White"/>
     </Grid>
 </Window>
