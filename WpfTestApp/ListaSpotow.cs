@@ -18,6 +18,7 @@ namespace WpfTestApp
             CreateStarsEndSpot();
             CreatePollyForestSpot();
             CreatePilaKuSpot();
+            CreateTestSpot();
         }
 
         public void clearListOfItems()
@@ -58,5 +59,23 @@ namespace WpfTestApp
             arrListaSpotow.Add(spot);
         }
 
+        private void CreateTestSpot()
+        {
+            List<Item> items = new List<Item>();
+            items.Add(listaItemow.listOfAllItems[0]);
+            items.Add(listaItemow.listOfAllItems[3]);
+            items.Add(listaItemow.listOfAllItems[4]);
+            items.Add(listaItemow.listOfAllItems[5]);
+            items.Add(listaItemow.listOfAllItems[6]);
+            items.Add(listaItemow.listOfAllItems[7]);
+            CreateSpot("Test Spot", items);
+        }
+
+        private void CreateSpot(string name, List<Item> items)
+        {
+            listaItemow.AddCommonItemsToList(items);
+            Spot spot = new Spot(name, items);
+            arrListaSpotow.Add(spot);
+        }
     }
 }
