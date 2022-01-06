@@ -18,7 +18,50 @@ namespace WpfTestApp
             CreateStarsEndSpot();
             CreatePollyForestSpot();
             CreatePilaKuSpot();
-            CreateTestSpot();
+            CreateAakmanTemple();
+            CreateAbandonedMonastery();
+            CreateAltarImpHabitat();
+            CreateAshForest();
+            CreateBashimBase();
+            CreateBasiliskDen();
+            CreateBiraghiDen();
+            CreateBloodWolfSetlement();
+            CreateBloodyMonastery();
+            CreateCadryRuins();
+            CreateCastleRuins();
+            CreateCentaurusHerd();
+            CreateCrescentShrine();
+            CreateCryptOfRestingThoughts();
+            CreateDesertNagaTemple();
+            CreateFadusHabitat();
+            CreateGahazBanditsLair();
+            CreateGyfinRhasiaTemple();
+            CreateHystriaRuins();
+            CreateKratugaAncientRuins();
+            CreateManshaumForest();
+            CreateMarieCave();
+            CreateMirumokRuins();
+            CreateNavarnSteppe();
+            CreateOllunsValley();
+            CreateOrcCamp();
+            CreatePadixIsland();
+            CreatePilaKuSpot();
+            CreatePollyForestSpot();
+            CreateProttyCave();
+            CreateRoudSulfurMine();
+            CreateSherekhanNecropolis();
+            CreateShultzGuard();
+            CreateStarsEndSpot();
+            CreateSwampFoganHabitat();
+            CreateSwampNagaHabitat();
+            CreateSycraiaAbyssalRuins();
+            CreateThornwoodForest();
+            CreateTitiumValley();
+            CreateToothFairyForest();
+            CreateTshiraRuins();
+            CreateTunkuta();
+            CreateUpperSycraiaAbyssalRuins();
+            CreateWaragonNest();
         }
 
         public void clearListOfItems()
@@ -34,9 +77,11 @@ namespace WpfTestApp
             List<Item> items = new List<Item>();
             items.Add(listaItemow.listOfAllItems[0]);
             items.Add(listaItemow.listOfAllItems[3]);
-            listaItemow.AddCommonItemsToList(items);
-            Spot spot = new Spot("Star's End", items);
-            arrListaSpotow.Add(spot);
+            items.Add(listaItemow.listOfAllItems[8]);
+            items.Add(listaItemow.listOfAllItems[9]);
+            items.Add(listaItemow.listOfAllItems[12]);
+            items.Add(listaItemow.listOfAllItems[5]);
+            CreateSpot("Star's End", items);
         }
 
         private void CreatePollyForestSpot()
@@ -44,31 +89,276 @@ namespace WpfTestApp
             List<Item> items = new List<Item>();
             items.Add(listaItemow.listOfAllItems[4]);
             items.Add(listaItemow.listOfAllItems[5]);
-            listaItemow.AddCommonItemsToList(items);
-            Spot spot = new Spot("Polly Forest", items);
-            arrListaSpotow.Add(spot);
+            items.Add(listaItemow.listOfAllItems[13]);
+            items.Add(listaItemow.listOfAllItems[14]);
+            items.Add(listaItemow.listOfAllItems[15]);
+            items.Add(listaItemow.listOfAllItems[16]);
+            items.Add(listaItemow.listOfAllItems[17]);
+            items.Add(listaItemow.listOfAllItems[18]);
+            items.Add(listaItemow.listOfAllItems[19]);
+            items.Add(listaItemow.listOfAllItems[20]);
+            CreateSpot("Polly Forest", items);
         }
 
         private void CreatePilaKuSpot()
         {
             List<Item> items = new List<Item>();
             items.Add(listaItemow.listOfAllItems[6]);
-            listaItemow.AddCommonItemsToList(items);
             items.Add(listaItemow.listOfAllItems[7]);
-            Spot spot = new Spot("Pila Ku Jail", items);
-            arrListaSpotow.Add(spot);
+            items.Add(listaItemow.listOfAllItems[23]);
+            items.Add(listaItemow.listOfAllItems[24]);
+            items.Add(listaItemow.listOfAllItems[25]);
+            items.Add(listaItemow.listOfAllItems[26]);
+            items.Add(listaItemow.listOfAllItems[27]);
+            items.Add(listaItemow.listOfAllItems[28]);
+            items.Add(listaItemow.listOfAllItems[29]);
+            items.Add(listaItemow.listOfAllItems[30]);
+            items.Add(listaItemow.listOfAllItems[31]);
+            CreateSpot("Pila ku Jail", items);
         }
 
-        private void CreateTestSpot()
+        private void CreateOrcCamp()
         {
             List<Item> items = new List<Item>();
-            items.Add(listaItemow.listOfAllItems[0]);
-            items.Add(listaItemow.listOfAllItems[3]);
-            items.Add(listaItemow.listOfAllItems[4]);
-            items.Add(listaItemow.listOfAllItems[5]);
-            items.Add(listaItemow.listOfAllItems[6]);
-            items.Add(listaItemow.listOfAllItems[7]);
-            CreateSpot("Test Spot", items);
+            CreateSpot("Orc Camp", items);
+        }
+
+        private void CreateSwampFoganHabitat()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Swamp Fogan Habitat", items);
+        }
+
+        private void CreateSwampNagaHabitat()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Swamp Naga Habitat", items);
+        }
+        private void CreateCryptOfRestingThoughts()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Crypt of Resting Thoughts", items);
+        }
+
+        private void CreateBiraghiDen()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Biraghi Den", items);
+        }
+
+        private void CreateAshForest()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Ash Forest", items);
+        }
+
+        private void CreateSycraiaAbyssalRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Sycraia Abyssal Ruins", items);
+        }
+
+        private void CreateHystriaRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Hystria Ruins", items);
+        }
+
+        private void CreateAakmanTemple()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Aakman Temple", items);
+        }
+
+        private void CreateKratugaAncientRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Kratuga Ancient Ruins", items);
+        }
+
+        private void CreateBloodyMonastery()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Bloody Monastery", items);
+        }
+
+        private void CreateThornwoodForest()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Thornwood Forest", items);
+        }
+        private void CreateGahazBanditsLair()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Gahaz Bandit's Lair", items);
+        }
+
+        private void CreateCentaurusHerd()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Centaurus Herd", items);
+        }
+
+        private void CreateCadryRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Cadry Ruins", items);
+        }
+
+        private void CreateCrescentShrine()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Crescent Shrine", items);
+        }
+
+        private void CreateBashimBase()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Bashim Base", items);
+        }
+
+        private void CreateDesertNagaTemple()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Desert Naga Temple", items);
+        }
+
+        private void CreateCastleRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Castle Ruins", items);
+        }
+
+        private void CreateAltarImpHabitat()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Altar Imp Habitat", items);
+        }
+
+        private void CreateAbandonedMonastery()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Abandoned Monastery", items);
+        }
+
+        private void CreateTunkuta()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Tunkuta", items);
+        }
+
+        private void CreatePadixIsland()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Padix Island", items);
+        }
+
+        private void CreateTitiumValley()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Titium Valley", items);
+        }
+
+        private void CreateOllunsValley()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Ollun's Valley", items);
+        }
+
+        private void CreateMirumokRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Mirumok Ruins", items);
+        }
+
+        private void CreateGyfinRhasiaTemple()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Gyfin Rhasia Temple", items);
+        }
+
+        private void CreateBasiliskDen()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Basilisk Den", items);
+        }
+
+        private void CreateWaragonNest()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Waragon Nest", items);
+        }
+
+        private void CreateBloodWolfSetlement()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Blood Wolf Setlement", items);
+        }
+
+        private void CreateSherekhanNecropolis()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Sherekhan Necropolis", items);
+        }
+
+        private void CreateToothFairyForest()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Tooth Fairy Forest", items);
+        }
+
+        private void CreateTshiraRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Tshira Ruins", items);
+        }
+
+        private void CreateManshaumForest()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Manshaum Forest", items);
+        }
+
+        private void CreateRoudSulfurMine()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Roud Sulfur Mine", items);
+        }
+
+        private void CreateUpperSycraiaAbyssalRuins()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Upper Sycraia Abyssal Ruins", items);
+        }
+
+        private void CreateShultzGuard()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Shultz Guard", items);
+        }
+
+        private void CreateProttyCave()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Protty Cave", items);
+        }
+
+        private void CreateFadusHabitat()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Fadus Habitat", items);
+        }
+
+        private void CreateNavarnSteppe()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Navarn Steppe", items);
+        }
+
+        private void CreateMarieCave()
+        {
+            List<Item> items = new List<Item>();
+            CreateSpot("Marie Cave", items);
         }
 
         private void CreateSpot(string name, List<Item> items)
