@@ -120,6 +120,15 @@ namespace WpfTestApp
         private void CreateOrcCamp()
         {
             List<Item> items = new List<Item>();
+            items.Add(listaItemow.listOfAllItems[32]);
+            items.Add(listaItemow.listOfAllItems[33]);
+            items.Add(listaItemow.listOfAllItems[34]);
+            items.Add(listaItemow.listOfAllItems[35]);
+            items.Add(listaItemow.listOfAllItems[36]);
+            items.Add(listaItemow.listOfAllItems[37]);
+            items.Add(listaItemow.listOfAllItems[38]);
+            items.Add(listaItemow.listOfAllItems[39]);
+            items.Add(listaItemow.listOfAllItems[40]);
             CreateSpot("Orc Camp", items);
         }
 
