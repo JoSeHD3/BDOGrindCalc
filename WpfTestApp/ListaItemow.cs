@@ -89,6 +89,19 @@ namespace WpfTestApp
             listOfAllItems.Add(new Item(2100000, "Black Magic Crystal - Armor", false, CreateImage("BlackMagicCrystal_Armor")));                    //38
             listOfAllItems.Add(new Item(7100, "Trace of Savagery", false, CreateImage("TraceOfSavagery")));                                         //39
             listOfAllItems.Add(new Item("Burning Valtarra's Jordun", CreateImage("BurningValtarrasJordun")));                                       //40
+            listOfAllItems.Add(new Item(17000, "Hardened Casque", true, CreateImage("HardenedCasque")));                                            //41
+            listOfAllItems.Add(new Item(4690000, "Shard of the Tearful Night", false, CreateImage("ShardOfTheTearfulNight")));                      //42
+            listOfAllItems.Add(new Item(3000000, "Okiara's Tide", false, CreateImage("OkiarasTide")));                                              //43
+            listOfAllItems.Add(new Item(2200000, "Black Magic Crystal - Sturdiness", false, CreateImage("BlackMagicCrystal_Sturdiness")));          //44
+            listOfAllItems.Add(new Item(12300000, "Tears of the Arid River", false, CreateImage("TearsOfTheAridRiver")));                           //45
+            listOfAllItems.Add(new Item(2100000, "Black Magic Crystal - Assault", false, CreateImage("BlackMagicCrystal_Assault")));                //46
+            listOfAllItems.Add(new Item(18000, "Bruised Naga Fin", false, CreateImage("BruisedNagaFin")));                                          //47
+            listOfAllItems.Add(new Item(190000000, "Moon's Split Nail", false, CreateImage("MoonsSplitNail")));                                     //48
+            listOfAllItems.Add(new Item(61000, "Trace of Death", false, CreateImage("TraceOfDeath")));                                              //49
+            listOfAllItems.Add(new Item(4600000, "Shard of the Drained Night", false, CreateImage("ShardOfTheDrainedNight")));                      //50
+            listOfAllItems.Add(new Item(3000000, "Narc's Lightning", true, CreateImage("NarcsLightning")));                                         //51
+            listOfAllItems.Add(new Item(2100000, "Black Magic Crystal - Ascension", false, CreateImage("BlackMagicCrystal_Ascension")));            //52
+            listOfAllItems.Add(new Item(30000, "Cold Tears of the Black Sun", true, CreateImage("ColdTearsOfTheBlackSun")));                        //53
         }
 
         public void AddCommonItemsToList(List<Item> items)

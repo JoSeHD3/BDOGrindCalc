@@ -135,6 +135,21 @@ namespace WpfTestApp
         private void CreateSwampFoganHabitat()
         {
             List<Item> items = new List<Item>();
+            items.Add(listaItemow.listOfAllItems[41]);
+            items.Add(listaItemow.listOfAllItems[42]);
+            items.Add(listaItemow.listOfAllItems[43]);
+            items.Add(listaItemow.listOfAllItems[33]);
+            items.Add(listaItemow.listOfAllItems[44]);
+            items.Add(listaItemow.listOfAllItems[45]);
+            items.Add(listaItemow.listOfAllItems[46]);
+            items.Add(listaItemow.listOfAllItems[47]);
+            items.Add(listaItemow.listOfAllItems[48]);
+            items.Add(listaItemow.listOfAllItems[49]);
+            items.Add(listaItemow.listOfAllItems[50]);
+            items.Add(listaItemow.listOfAllItems[51]);
+            items.Add(listaItemow.listOfAllItems[52]);
+            items.Add(listaItemow.listOfAllItems[53]);
+            items.Add(listaItemow.listOfAllItems[40]);
             CreateSpot("Swamp Fogan Habitat", items);
         }
 
