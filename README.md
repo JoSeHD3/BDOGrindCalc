@@ -1,2 +1,2 @@
 # BDOGrindCalc
-a specially created calculator to help you count money in BDO
+a specially created calculator that will help you count your money in BDO
